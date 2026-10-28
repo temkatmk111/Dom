@@ -5,8 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reaction time</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
-  <body>
-    Reaction time game
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#09090b] font-sans text-[#f4f4f5]"
+  >
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#d9f99d]/10"
+      >
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#d9f99d]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#d9f99d] transition-colors hover:border-[#d9f99d]/35 hover:bg-[#d9f99d]/10 hover:text-[#f4f4f5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9f99d] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#d9f99d]/65"
+          >The everyday collection / 06</span
+        >
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div
+          class="flex flex-col p-[32px] w-[576px] h-[575px] rounded-[24px] bg-[#18181B] border-[#27272A] border"
+        >
+          <div class="text-[24px] text-[#F4F4F5] mb-[8px]">Reaction time</div>
+          <div class="text-[14px] text-[#A1A1AA]">
+            Wait for green, then click as quickly as you can.
+          </div>
+          <div
+            class="flex flex-col justify-center items-center mt-[24px] mb-[24px] w-[512px] h-[256px] rounded-[16px] bg-[#27272A]"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#F4F4F5"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-dot preview-icon"
+              >
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </div>
+            <div class="mb-[12px] mt-[18px] text-[24px] text-[#F4F4F5]">
+              Ready when you are
+            </div>
+            <div class="text-[#F4F4F5] text-[14px]">Click to start</div>
+          </div>
+          <div class="gap-[12px] flex flex-row">
+            <div
+              class="w-[250px] h-[84px] flex flex-col justify-center items-center bg-[#27272A] rounded-[12px] gap-[4px]"
+            >
+              <div class="border w-[24px] border-[#D9F99D]"></div>
+              <div class="text-[12px] text-[#A1A1AA]">Last attempt</div>
+            </div>
+            <div
+              class="w-[250px] h-[84px] flex flex-col justify-center items-center bg-[#27272A] rounded-[12px] gap-[4px]"
+            >
+              <div class="border w-[24px] border-[#D9F99D]"></div>
+              <div class="text-[12px] text-[#A1A1AA]">Best this session</div>
+            </div>
+          </div>
+          <div class="text-[12px] text-[#A1A1AA] text-center mt-[20px]">
+            Click the panel, or focus it and press Space or Enter. Clicking
+            before green ends the attempt.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
