@@ -45,28 +45,28 @@
         <div
           class="flex h-[571px] w-[520px] flex-col rounded-3xl border border-[#FFFFFF1A] bg-[#192B22] p-[36px]"
         >
-          <div class="mb-[24px] flex h-[44px] w-[44px] items-center justify-center rounded-xl bg-[#4ADE8026]"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="" viewBox="0 0 24 24" fill="none" stroke="#86EFAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock preview-icon"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></i></div>
+          <div class="mb-[24px] flex h-[44px] w-[44px] items-center justify-center rounded-xl bg-[#4ADE8026]"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#86EFAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock preview-icon"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></i></div>
           <div class="mb-[8px] h-[34px] w-[273px] text-[28px] font-bold font-semibold text-[#F0FDF4]">Password generator</div>
           <div class="mb-[32px] h-[17px] w-[235px] text-[14px] text-[#A4B9AD]">A strong password. One click away.</div>
           <div class="mb-[12px] h-[15px] w-[85px] text-[12px] text-[#A4B9AD]">Your password</div>
           <div class=" flex w-[448px] h-[64px] rounded-xl bg-[#101B16] flex-row items-center justify-between pr-[12px] pl-[16px] mb-[12px]">
-            <div class="h-[24px] text-[18px] text-[#BBF7D0]">K9#mQ2&xR7!vN4@p</div>
-            <div  class=" flex w-[55px] h-[31px] rounded-[8px] items-center justify-center bg-[#FFFFFF0D] text-[12px] text-[#DCECE2]">copy</div>
+            <div id="ShowGeneratedPassword" class="h-[24px] text-[18px] text-[#BBF7D0]">K9#mQ2&xR7!vN4@p</div>
+            <div  id="Copy" class=" flex w-[55px] h-[31px] rounded-[8px] items-center justify-center bg-[#FFFFFF0D] text-[12px] text-[#DCECE2]">copy</div>
           </div>
-          <div class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD] mb-[30px]">Uses letters, numbers, and symbols.</div>
+          <div id="Message" class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD] mb-[30px]">Uses letters, numbers, and symbols.</div>
           <div class="flex justify-between mb-[29px]">
             <div class="w-[111px] h-[17px] text-[14px] text-[#DCECE2]">Password lenght</div>
-            <div class="text-[18px] text-[#86EFAC]">16</div>
+            <div id="ShowLenght" class="text-[18px] text-[#86EFAC]">16</div>
           </div>
-          <input type="range" min="8" max="24" value="16" class="accent-[#4ADE80] mb-[12px]">
+          <input   id="InputLength" type="range" min="8" max="24" value="16" class="accent-[#4ADE80] mb-[12px]">
           <div class="flex justify-between mb-[29px]">
             <div class="text-[12px] text-[#86EFAC]">8</div>
             <div class="text-[12px] text-[#86EFAC]">24</div>
           </div>
-          <div class=" flex w-[448px] h-[64px] rounded-xl bg-[#4ADE80] items-center justify-center  mb-[21px]">
+          <div  id="GeneratePasswordButton" class=" flex w-[448px] h-[64px] rounded-xl bg-[#4ADE80] items-center justify-center  mb-[21px]">
             <div class="font-semibold text-[14px] text-[#102418]">Generate password</div>
           </div>
-          <div class="flex justify-center text-[12px]  text-[#8AA294]">Generated in your browser. Never saved.</div>
+          <div class="flex  justify-center text-[12px]  text-[#8AA294]">Generated in your browser. Never saved.</div>
         </div>
       </div>
     </div>
