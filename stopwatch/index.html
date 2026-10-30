@@ -83,12 +83,12 @@
 
             <div class="text-[56px] text-[#5C7161]">:</div>
             <div class="flex flex-col items-center justify-center gap-[16px ]">
-              <div minutes class="text-[56px] text-[#EDF3E8]">00</div>
+              <div id="Minutes" class="text-[56px] text-[#EDF3E8]">00</div>
               <div class="text-[9px] text-[#9BAD9E]">MINUTES</div>
             </div>
             <div class="text-[56px] text-[#5C7161]">:</div>
             <div   class="flex flex-col items-center justify-center gap-[16px ]">
-              <div id="seconds" class="text-[56px] text-[#EDF3E8]">00</div>
+              <div id="Seconds" class="text-[56px] text-[#EDF3E8]">00</div>
               <div class="text-[9px] text-[#9BAD9E]">SECONDS</div>
             </div>
           </div>
@@ -97,9 +97,9 @@
             class="w-[540px] border border-[#B5CBB226] mb-[36px] mt-[36px]"
           ></div>
           <div class="flex gap-[12px]">
-            <div id="Start" class=" flex justify-center items-center w-[258px] h-[48px] rounded-xl bg-[#B5CBB2] text-[14px] text-[#102418]  ">Start</div>
-            <div id="Pause" class=" flex justify-center items-center w-[129px] h-[48px] rounded-xl bg-[#FFFFFF0D] border-[#FFFFFF1A] border text-[14px] text-[#DCECE2]  ">Pause</div>
-            <div id="Reset" class=" flex justify-center items-center w-[129px] h-[48px] rounded-xl bg-[#FFFFFF0D] border-[#FFFFFF1A] border text-[14px] text-[#DCECE2]  ">reset</div>
+            <div> <button id="Start" type="button" class="cursor-pointer flex justify-center items-center w-[258px] h-[48px] rounded-xl bg-[#B5CBB2]  text-[14px] text-[#102418] disabled:cursor-not-allowed disabled:opacity-35  ">Start</button> </div>
+            <div ><button disabled id="Pause" type="button"class=" cursor-pointer flex justify-center items-center w-[129px] h-[48px] rounded-xl bg-[#FFFFFF0D] border-[#FFFFFF1A] border text-[14px] text-[#DCECE2] disabled:cursor-not-allowed disabled:opacity-35   ">Pause</button></div>
+            <div ><button  disabled  id="Reset" type="button" class="cursor-pointer flex justify-center items-center w-[129px] h-[48px] rounded-xl bg-[#FFFFFF0D]  border-[#FFFFFF1A] border text-[14px] text-[#DCECE2] disabled:cursor-not-allowed disabled:opacity-35  ">Reset</button></div>
           </div>
           <div class="flex justify-center text-[12px] text-[#8AA294] mt-[20px]">A moment of focus. At your own pace</div>
         </div>
