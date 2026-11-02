@@ -48,10 +48,11 @@
           <div class="text-[14px] text-[#A1A1AA]">
             Wait for green, then click as quickly as you can.
           </div>
-          <div
+          
+             <div type="button" id="startButton"
             class="flex flex-col justify-center items-center mt-[24px] mb-[24px] w-[512px] h-[256px] rounded-[16px] bg-[#27272A]"
           >
-            <div>
+            <div id="startButtonIcon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -68,23 +69,25 @@
                 <circle cx="12" cy="12" r="10" />
               </svg>
             </div>
-            <div class="mb-[12px] mt-[18px] text-[24px] text-[#F4F4F5]">
+            <div id="startButtonMain" class="mb-[12px] mt-[18px] text-[24px] text-[#F4F4F5]">
               Ready when you are
             </div>
-            <div class="text-[#F4F4F5] text-[14px]">Click to start</div>
+            <div id="startButtonSub" class="text-[#F4F4F5] text-[14px]">Click to start</div>
           </div>
-          <div class="gap-[12px] flex flex-row">
+    
+          
+          <div  class="gap-[12px] flex flex-row">
             <div
-              class="w-[250px] h-[84px] flex flex-col justify-center items-center bg-[#27272A] rounded-[12px] gap-[4px]"
+              class=" w-[250px] h-[84px] flex flex-col justify-center items-center bg-[#27272A] rounded-[12px] gap-[4px]"
             >
-              <div class="border w-[24px] border-[#D9F99D]"></div>
-              <div class="text-[12px] text-[#A1A1AA]">Last attempt</div>
+              <div id="lastAttemptScore" flex class="border w-[24px] border-[#D9F99D]"></div>
+              <div id="lastAttempt" class="text-[12px] text-[#A1A1AA]">Last attempt</div>
             </div>
-            <div
-              class="w-[250px] h-[84px] flex flex-col justify-center items-center bg-[#27272A] rounded-[12px] gap-[4px]"
+            <div id="bestAttempt"
+              class="  w-[250px] h-[84px] flex   flex-col justify-center items-center bg-[#27272A] rounded-[12px] gap-[4px]"
             >
-              <div class="border w-[24px] border-[#D9F99D]"></div>
-              <div class="text-[12px] text-[#A1A1AA]">Best this session</div>
+              <div id="bestAttemptScore" class=" flex border w-[24px] border-[#D9F99D]"></div>
+              <div id="bestAttempt" class="text-[12px] text-[#A1A1AA]">Best this session</div>
             </div>
           </div>
           <div class="text-[12px] text-[#A1A1AA] text-center mt-[20px]">
