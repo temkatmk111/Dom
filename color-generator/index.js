@@ -1,6 +1,6 @@
 const colors = document.getElementById("colors");
 const statusElement = document.getElementById("status");
-const shufflePalettes = document.getElementById("Shuffle-Button");
+const shufflePalettes = document.getElementById("shuffle-palettes");
 
 const lightness = [94, 86, 76, 64, 52, 43, 35, 27, 20, 12];
 const shades = [100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
@@ -77,7 +77,6 @@ const renderPalettes = () => {
     const colorButtons = shades
       .map((shade, index) => {
         const hex = hslToHex(family.hue, family.saturation, lightness[index]);
-
 
         return ` 
         <button type="button" data-hex="${hex}" class="group min-w-0 cursor-pointer rounded-xl text-center">
