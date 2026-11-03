@@ -101,7 +101,7 @@ function handleReaction() {
     if (bestAttemptScore) {
       bestAttemptScore.textContent = `${bestScore}ms`;
       bestAttemptScore.style.color = "#D9F99D";
-      bestAttemptScore.style.border =  width = "0px";
+      bestAttemptScore.style.border = "none";
     }
   }
 
